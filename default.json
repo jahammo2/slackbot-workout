@@ -17,7 +17,7 @@
       "maxTime": 23,
       "units": "minutes"
     },
-    "numPeople": 3,
+    "numPeople": 4,
     "slidingWindowSize": 8,
     "groupCalloutChance": 0.05
   },
@@ -55,6 +55,20 @@
       "id": 4,
       "name": "calf raises",
       "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 5,
+      "name": "squats",
+      "minReps": 22,
+      "maxReps": 35,
+      "units": "rep"
+    },
+    {
+      "id": 6,
+      "name": "jumping jacks",
+      "minReps": 18,
       "maxReps": 30,
       "units": "rep"
     }

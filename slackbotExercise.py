@@ -50,7 +50,7 @@ class Bot:
     '''
     def setConfiguration(self):
         # Read variables fromt the configuration file
-        with open('config.json') as f:
+        with open('default.json') as f:
             settings = json.load(f)
 
             self.team_domain = settings["teamDomain"]
@@ -209,10 +209,12 @@ def assignExercise(bot, exercise):
 
         for i in range(bot.num_people_per_callout):
             winner_announcement += str(winners[i].getUserHandle())
-            if i == bot.num_people_per_callout - 2:
+            if i == bot.num_people_per_callout - 3:
                 winner_announcement += ", and "
-            elif i == bot.num_people_per_callout - 1:
+            elif i == bot.num_people_per_callout - 2:
                 winner_announcement += "!"
+            elif i == bot.num_people_per_callout - 1:
+                winner_announcement += ", "
             else:
                 winner_announcement += ", "
 
